@@ -31,7 +31,6 @@ header {
 header .resBar {
     border-right: 1px solid #555555;
     min-height: 60vh;
-    max-height: 100vh;
     transform: translateX(-70%);
 }
 
@@ -159,6 +158,10 @@ header .container .content .fruits-container {
     align-items: center;
     padding: 10px 40px;
     /* margin-left: 20%; */
+}
+
+header .fruits-container .fruitbg img {
+    filter: contrast(1.2);
 }
 
 .fruits-container div:nth-child(1) {
