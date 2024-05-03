@@ -1,0 +1,164 @@
+
+/* SM SCREEN */
+
+/* @media screen and (max-width: 500px) {
+    header {
+    grid-template-columns: 6.9rem auto;
+
+    }
+
+    header .navbar .nav-links .market-about {
+        display: none;
+    }
+
+    header .fruits-container .fruits .fruitbg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    header .container .fruits .fruits-offer {
+        flex-flow: column;
+    }
+
+
+    header .container .fruits .fruits-offer .offer .fruitimg img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .fruits .fruits-offer .offer .cost-offer button {
+        padding: .5rem 1rem;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+    .fruits .fruits-offer .offer .cost-offer {
+        display: flex;
+        align-items: baseline;
+    }
+    .fruits .fruits-offer .offer p {
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .fruits-container p {
+        font-size: 13px;
+        width: 150px;
+    }
+
+    .fruits-container .fruits-delivery {
+        align-self: flex-start;
+    }
+
+} */
+
+/* MD SCREEN */
+
+@media screen and (max-width :768px){
+    
+
+    header .content .social{
+        width: 40px;
+    }
+
+    header .navbar .nav-links .market-about {
+        display: none;
+    }
+
+    .fruits-container .fruitbg img {
+        width: 141px;
+        height: 256px;
+    }
+
+    .fruits-container {
+        grid-template-columns: 1fr 2fr;
+        
+    }
+
+    .fruits-container .fruits-delivery {
+        position: absolute;
+        top: 30%;
+    }
+
+    .fruits-container .fruits-delivery h1 {
+        font-size: 25px;
+    }
+
+    .fruits-container .info p, .fruits-container .fruits-delivery p {
+        font-size: 12px;
+    }
+
+    header .container .fruits .fruits-offer {
+        flex-flow: column;
+    }
+
+    .fruits .fruits-offer .offer .details {
+        flex-flow: column;
+    }
+
+    .fruits .fruits-offer .offer .cost-offer button {
+        padding: .2rem 1rem;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+    .fruits .fruits-offer .offer .details p {
+        font-size: 10px;
+        width: fit-content;
+    }
+
+    .fruits .fruits-offer .offer .cost-offer {
+        display: flex;
+        align-items: baseline;
+    }
+
+    
+}
+
+/* LG SCREEN */
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    
+
+    header .resBar{
+        display: none;
+    }
+
+    .fruits-container .fruitbg img {
+        width: 513px;
+        height: 600px;
+    }
+
+    .fruits-container {
+    grid-template-columns: repeat(3, 3fr);
+
+    }
+
+    header .content .social {
+        width: 50px;
+    }
+}
+
+/* XL SCREEN */
+
+@media screen and (min-width: 1171px){
+    
+
+    header .resBar{
+        display: none;
+    }
+
+    .fruits-container .fruitbg img {
+        width: 513px;
+        height: 600px;
+    }
+
+    .fruits-container{
+        grid-template-columns: repeat(3, 3fr);
+
+    }
+
+    header .content .social {
+        width: 50px;
+    }
+}
