@@ -3,6 +3,8 @@
 :root {
     --primary-color: #DEC700;
     --text-color: #c9c4c4;
+    --backg-color: #18181A;
+    --shadow-color: 0 3px 6px #000;
 }
 
 * {
@@ -11,12 +13,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
-    max-height: 1050vh;
+    /* max-height: 1050vh; */
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
+    background-color: #000;
+    color: #FFF;
 }
 
 header {
@@ -35,20 +43,9 @@ header .resBar {
 }
 
 header .resBar.show {
-    /* animation: sidebar 1s, 5 ease-in; */
     transform: translateX(0%);
     transition: all .3s ease-in-out;
 }
-
-/* @keyframes sidebar {
-    0% {
-        transform: translateX(-70%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-} */
 
 header .resBar .iconBar i {
     width: 100%;
@@ -68,7 +65,6 @@ header .sidebar {
 header .resBar .sidebar .nav-links {
     display: flex;
     flex-flow: column;
-    /* justify-content: space-evenly; */
     align-items: center;
     height: 100%;
 }
@@ -152,12 +148,15 @@ header .container .fruits .content .social {
     z-index: 5;
 }
 
+header .container .fruits .content .social i {
+    cursor: pointer;
+}
+
 header .container .content .fruits-container {
     color: #FFFFFF;
     display: grid;
     align-items: center;
     padding: 10px 40px;
-    /* margin-left: 20%; */
 }
 
 header .fruits-container .fruitbg img {
@@ -186,13 +185,6 @@ header .container .fruits p  {
     color: var(--text-color);
 }
 
-/* .fruits-container .fruitbg img {
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 400px;
-    max-height: 600px;
-} */
-
 .fruits-container .fruits-delivery span p {
     font-family: "Sacramento";
     color: var(--primary-color);
@@ -202,7 +194,6 @@ header .container .fruits p  {
 header .container .fruits .fruits-offer {
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     background-color: rgb(85 83 83 / 70%);
     backdrop-filter: contrast(.8) brightness(0.8);
 }
@@ -248,7 +239,6 @@ header .container .fruits .fruits-offer {
 
 .fruits .fruits-offer .offer .details {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -303,5 +293,279 @@ header .container .fruits .fruits-offer {
     border: none;
     outline: none;
     color: #FFFFFF;
-    box-shadow: 0 3px 6px #000;
+    box-shadow: var(--shadow-color);
+    cursor: pointer;
 }
+
+/* END OF HEADER */
+
+.favourites,
+ .fruit-shop {
+    padding: 10px 5rem;
+    margin: 25px 0;
+}
+
+.favourites .fav, 
+.fruit-shop .shopping {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid var(--backg-color);
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.favourites .fav button ,
+ .fruit-shop .shopping button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    align-items: baseline;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.favourites .fav button:hover i ,
+.fruit-shop .shopping button:hover i {
+    transform: translateX(5px);
+    transition: transform .3s ease-in;
+}
+
+.favourites .fav-list,
+ .fruit-shop .shop-list {
+    display: grid;
+    gap: 10px;
+}
+
+.favourites .fav-list .food,
+ .fruit-shop .shop-list .food {
+    box-shadow: 0 4px 4px 0 #000000;
+    background-color: var(--backg-color);
+    width: 265px;
+    margin: auto;
+}
+
+.favourites .fav-list .food .foodimg img,
+ .fruit-shop .shop-list .food img{
+    width: 265px;
+    height: 214px;
+    filter: saturate(1.2);
+}
+
+.favourites .fav-list .food .food-details ,
+ .fruit-shop .shop-list .food .food-details{
+    padding: 10px;
+}
+
+.favourites .fav-list .food .food-details .food-info,
+ .fruit-shop .shop-list .food .food-details .food-info {
+    width: 225px;
+    line-height: 14.06px;
+    color: var(--text-color);
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+.favourites .fav-list .food .food-details span p,
+.fruit-shop .shop-list .food .food-details span p {
+    display: inline;
+    margin: 0 15px 0 0;
+}
+
+.favourites .fav-list .food .food-details span p:nth-child(2), 
+.fruit-shop .shop-list .food .food-details span p:nth-child(2) {
+    color: var(--text-color);
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.favourites .fav-list .food .food-details .shop,
+.fruit-shop .shop-list .food .food-details .shop {
+    display: flex;
+    margin: 20px 0;
+    justify-content: flex-start;
+}
+
+.favourites .fav-list .food .food-details .shop .quantity,
+.fruit-shop .shop-list .food .food-details .shop .quantity {
+    border: 1px solid #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 96px;
+    border-radius: 2px;
+    margin: 0 30px 0 0;
+    padding: 5px;
+}
+
+.favourites .fav-list .food .food-details .shop .quantity i,
+.fruit-shop .shop-list .food .food-details .shop .quantity i {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.favourites .fav-list .food .food-details .shop button,
+.fruit-shop .shop-list .food .food-details .shop button {
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    color: #FFF;
+    box-shadow: var(--shadow-color);
+    cursor: pointer;
+}
+
+/* END FAVOURITES FRUIT AND SHOP  */
+
+.about {
+    padding: 15px 5rem;
+    margin: 25px 0;
+    background-color: #090A10;
+    width: 100%;
+}
+
+.about .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid var(--backg-color);
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.about .head .slideicon i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.about .person-info {
+    background-color: rgba(54, 54, 54, 0.4);
+    width: 364px;
+    padding: 10px;
+    margin: auto;
+}
+
+.about .people {
+    display: grid;
+    gap: 10px;
+}
+
+.about .people .person-info .person  {
+    display: flex;  
+    align-items: center; 
+}
+
+.about .people .person-info img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.about .people .person-info .rate {
+    margin-left: 10px;
+}
+
+.about .people .person-info .rate i {
+    font-size: 11.17px;
+    margin-left: 10px;
+}
+
+.about .people .person-info p.person-name {
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.about .people .person-info .person-about {
+    color: var(--text-color);
+    font-weight: 100;
+    width: 225px;
+    line-height: 14.06px;
+    font-size: 12px;
+}
+
+/* END ABOUT SECTION */
+
+footer {
+    padding: 15px 0 15px 5rem;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer h2 {
+    font-weight: 900;
+    width: 205px;
+    color: #898888;
+}
+
+footer .subscribe {
+    display: flex;
+    margin: 15px 0;
+}
+
+footer .subscribe input {
+    border: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+footer .subscribe input::placeholder{
+    color: #fff;
+}
+
+footer .subscribe button {
+    padding: 8.9px 3rem;
+    background-color: #FFFFFF;
+    margin-left: -4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer .sub-media {
+    background-color: #171719;
+    padding: 3rem 20px;
+    width: 354px;
+}
+
+footer .sub-media p {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer .sub-media i {
+    font-size: 19px;
+    background-color: #fff;
+    color: #000;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+footer .company {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+footer .logo h2 {
+    width: 83px;
+    font-weight: 900;
+    color: #fff;
+}
+
+footer .logo h2 span {
+    font-family: 'Sacramento';
+    display: block;
+    font-weight: 400;
+}
+
+footer .company p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+

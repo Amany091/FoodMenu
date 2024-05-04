@@ -1,61 +1,25 @@
 
 /* SM SCREEN */
 
-/* @media screen and (max-width: 500px) {
-    header {
-    grid-template-columns: 6.9rem auto;
-
+@media screen and (max-width: 500px) {
+    .favourites .fav-list , 
+    .fruit-shop .shop-list,
+    .about .people {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    header .navbar .nav-links .market-about {
-        display: none;
+    footer .contact .subscribe input {
+    padding: .5rem 1rem .5rem 3rem;
     }
 
-    header .fruits-container .fruits .fruitbg img {
-        width: 200px;
-        height: 300px;
+    footer .contact, footer .company {
+        flex-direction: column;
     }
-
-    header .container .fruits .fruits-offer {
-        flex-flow: column;
-    }
-
-
-    header .container .fruits .fruits-offer .offer .fruitimg img {
-        width: 100px;
-        height: 150px;
-    }
-
-    .fruits .fruits-offer .offer .cost-offer button {
-        padding: .5rem 1rem;
-        font-size: 10px;
-        margin-left: 20px;
-    }
-
-    .fruits .fruits-offer .offer .cost-offer {
-        display: flex;
-        align-items: baseline;
-    }
-    .fruits .fruits-offer .offer p {
-        font-size: 14px;
-        width: 100px;
-    }
-
-    .fruits-container p {
-        font-size: 13px;
-        width: 150px;
-    }
-
-    .fruits-container .fruits-delivery {
-        align-self: flex-start;
-    }
-
-} */
+}
 
 /* MD SCREEN */
 
 @media screen and (max-width :768px){
-    
 
     header .content .social{
         width: 40px;
@@ -111,7 +75,15 @@
         display: flex;
         align-items: baseline;
     }
+    /* END HEADER */
 
+    footer .contact .subscribe input {
+    padding: .5rem 1rem .5rem 3rem;
+    }
+
+    footer .contact , footer .company{
+        flex-flow: column;
+    }
     
 }
 
@@ -145,6 +117,20 @@
     .fruits-container .fruits-delivery span p {
         font-size: 16px;
     }
+    /* END HEADER */
+
+    .favourites .fav-list , 
+    .fruit-shop .shop-list,
+    .about .people{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* END FAVOURITE FRUIT AND SHOP */
+
+    footer .contact .subscribe input {
+        padding: .5rem 10rem .5rem 3rem;
+
+    }
 }
 
 /* XL SCREEN */
@@ -177,5 +163,19 @@
 
     .fruits-container .fruits-delivery span p {
         font-size: 16px;
+    }
+    /* END HEADER */
+
+    .favourites .fav-list, 
+    .fruit-shop .shop-list,
+    .about .people {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* END FAVOURITES FRUIT AND SHOP */
+
+    FOOTER .contact .subscribe input {
+        padding: .5rem 10rem .5rem 3rem;
+
     }
 }
