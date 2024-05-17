@@ -8,6 +8,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    
+
+    header .fruits-container .fruits-delivery {
+        max-width: 30vw;
+    }
+
     footer .contact .subscribe input {
     padding: .5rem 1rem .5rem 3rem;
     }
@@ -29,19 +35,8 @@
         display: none;
     }
 
-    .fruits-container .fruitbg img {
-        width: 141px;
-        height: 256px;
-    }
-
-    .fruits-container {
-        grid-template-columns: 1fr 2fr;
-        
-    }
-
-    .fruits-container .fruits-delivery {
-        position: absolute;
-        top: 33%;
+    .fruits-container .info {
+        grid-column: 1/4;
     }
 
     .fruits-container .fruits-delivery h1 {
@@ -53,10 +48,6 @@
     }
 
     header .container .fruits .fruits-offer {
-        flex-flow: column;
-    }
-
-    .fruits .fruits-offer .offer .details {
         flex-flow: column;
     }
 
@@ -94,11 +85,6 @@
 
     header .resBar{
         display: none;
-    }
-
-    .fruits-container .fruitbg img {
-        width: 513px;
-        height: 600px;
     }
 
     .fruits-container {
@@ -140,12 +126,6 @@
 
     header .resBar{
         display: none;
-    }
-
-    .fruits-container .fruitbg img {
-        width: 513px;
-        height: 703px;
-        
     }
 
     .fruits-container{
