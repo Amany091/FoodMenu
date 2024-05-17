@@ -3,9 +3,12 @@
 
 @media screen and (max-width: 500px) {
     .favourites .fav-list , 
-    .fruit-shop .shop-list,
-    .about .people {
-        grid-template-columns: repeat(1, 1fr);
+    .fruit-shop .shop-list {
+        grid-template-columns: repeat(1, 1.5fr);
+    }
+
+    .about .people{
+        grid-template-columns: minmax(300px, 600px);
     }
 
     
@@ -52,7 +55,7 @@
     }
 
     .fruits .fruits-offer .offer .cost-offer button {
-        padding: .2rem 1rem;
+        padding: 5px;
         font-size: 10px;
         margin-left: 20px;
     }
