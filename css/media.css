@@ -1,164 +1,129 @@
-
-/* SM SCREEN */
-
 @media screen and (max-width: 500px) {
-    .favourites .fav-list , 
+    .market-about {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .fruits-container {
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    .fruits-offer {
+        flex-direction: column;
+    }
+
+    .shop>div {
+        width: 100px;
+    }
+
+    .about .people {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    footer .contact .subscribe input {
+        padding: .5rem 1rem .5rem 3rem;
+    }
+
+    footer .contact,
+    footer .company {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width :768px) {
+    .market-about {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .fruits-container {
+        grid-template-columns: repeat(2, 3fr);
+    }
+    .fruits-offer {
+        flex-direction: column;
+    }
+
+    .favourites .fav-list,
     .fruit-shop .shop-list {
         grid-template-columns: repeat(1, 1.5fr);
     }
 
-    .about .people{
-        grid-template-columns: minmax(300px, 600px);
+    .shop>div {
+        width: 100px;
     }
 
-    
-
-    header .fruits-container .fruits-delivery {
-        max-width: 30vw;
+    .about .people {
+        grid-template-columns: repeat(1, 100%);
     }
 
     footer .contact .subscribe input {
-    padding: .5rem 1rem .5rem 3rem;
+        padding: .5rem 1rem .5rem 3rem;
     }
 
-    footer .contact, footer .company {
-        flex-direction: column;
-    }
-}
-
-/* MD SCREEN */
-
-@media screen and (max-width :768px){
-
-    header .content .social{
-        width: 40px;
-    }
-
-    header .navbar .nav-links .market-about {
-        display: none;
-    }
-
-    .fruits-container .info {
-        grid-column: 1/4;
-    }
-
-    .fruits-container .fruits-delivery h1 {
-        font-size: 25px;
-    }
-
-    .fruits-container .info p, .fruits-container .fruits-delivery p {
-        font-size: 12px;
-    }
-
-    header .container .fruits .fruits-offer {
+    footer .contact,
+    footer .company {
         flex-flow: column;
     }
-
-    .fruits .fruits-offer .offer .cost-offer button {
-        padding: 5px;
-        font-size: 10px;
-        margin-left: 20px;
-    }
-
-    .fruits .fruits-offer .offer .details p {
-        font-size: 10px;
-        width: fit-content;
-    }
-
-    .fruits .fruits-offer .offer .cost-offer {
-        display: flex;
-        align-items: baseline;
-    }
-    /* END HEADER */
-
-    footer .contact .subscribe input {
-    padding: .5rem 1rem .5rem 3rem;
-    }
-
-    footer .contact , footer .company{
-        flex-flow: column;
-    }
-    
 }
-
-/* LG SCREEN */
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-    
+    .market-about {
+        display: block;
+    }
 
-    header .resBar{
+    .sidebar {
         display: none;
     }
 
     .fruits-container {
-    grid-template-columns: repeat(3, 3fr);
-
+        grid-template-columns: repeat(3, 3fr);
     }
 
-    header .content .social {
-        width: 50px;
-    }
-
-    .fruits-container .fruits-delivery h1 {
-        font-size: 64px;
-    }
-
-    .fruits-container .fruits-delivery span p {
-        font-size: 16px;
-    }
-    /* END HEADER */
-
-    .favourites .fav-list , 
-    .fruit-shop .shop-list,
-    .about .people{
+    .favourites .fav-list,
+    .fruit-shop .shop-list {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* END FAVOURITE FRUIT AND SHOP */
+    .about .people {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     footer .contact .subscribe input {
-        padding: .5rem 10rem .5rem 3rem;
+        padding: .5rem 4rem .5rem 3rem;
 
     }
 }
 
-/* XL SCREEN */
+@media screen and (min-width: 1171px) {
+    .market-about {
+        display: block;
+    }
 
-@media screen and (min-width: 1171px){
-    
-
-    header .resBar{
+    .sidebar {
         display: none;
     }
 
-    .fruits-container{
+    .fruits-container {
         grid-template-columns: repeat(3, 3fr);
-
     }
 
-    header .content .social {
-        width: 50px;
-    }
-
-    .fruits-container .fruits-delivery h1 {
-        font-size: 64px;
-    }
-
-    .fruits-container .fruits-delivery span p {
-        font-size: 16px;
-    }
-    /* END HEADER */
-
-    .favourites .fav-list, 
-    .fruit-shop .shop-list,
-    .about .people {
+    .favourites .fav-list,
+    .fruit-shop .shop-list {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    /* END FAVOURITES FRUIT AND SHOP */
+    .about .people {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-    FOOTER .contact .subscribe input {
+    footer .contact .subscribe input {
         padding: .5rem 10rem .5rem 3rem;
-
     }
 }
