@@ -1,3 +1,6 @@
+
+
+
 export const shop = [
     {
         image: '../assets/bananas.jpeg',

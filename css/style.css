@@ -315,28 +315,32 @@ header pre {
 }
 
 .favourites .fav-list,
- .fruit-shop .shop-list {
+ .fruit-shop .shop-list,
+ .fruit-shop .newest {
     display: grid;
     gap: 10px;
 }
 
 .favourites .fav-list .food,
- .fruit-shop .shop-list .food {
+ .fruit-shop .shop-list .food,
+ .newest .food {
     box-shadow: 0 4px 4px 0 #000000;
     background-color: var(--backg-color);
-    height: 70vh;
+    height: 73vh;
     max-height: 75vh;
 }
 
 .favourites .fav-list .food  img,
- .fruit-shop .shop-list .food img{
+ .fruit-shop .shop-list .food img,
+ .newest .food img {
     filter: saturate(1.2);
     object-fit: cover;
     width: 100%;
 }
 
 .favourites .fav-list .food  .food-info,
- .fruit-shop .shop-list .food  .food-info {
+ .fruit-shop .shop-list .food  .food-info,
+ .newest .food  .food-info {
     /* width: 225px; */
     line-height: 14.06px;
     color: var(--text-color);
@@ -345,13 +349,15 @@ header pre {
 }
 
 .favourites .fav-list .food  span p,
-.fruit-shop .shop-list .food  span p {
+.fruit-shop .shop-list .food  span p ,
+.newest .food  span p {
     display: inline;
     margin: 0 15px 0 0;
 }
 
 .favourites .fav-list .food  span p:nth-child(2), 
-.fruit-shop .shop-list .food  span p:nth-child(2) {
+.fruit-shop .shop-list .food  span p:nth-child(2),
+.newest .food  span p:nth-child(2) {
     color: var(--text-color);
     font-size: 10px;
     text-decoration: line-through;
@@ -362,13 +368,15 @@ header pre {
 }
 
 .favourites .fav-list .food  .shop  i,
-.fruit-shop .shop-list .food  .shop  i {
+.fruit-shop .shop-list .food  .shop  i,
+.newest .food  .shop  i {
     cursor: pointer;
     font-size: 16px;
 }
 
 .favourites .fav-list .food  .shop button,
-.fruit-shop .shop-list .food .shop button {
+.fruit-shop .shop-list .food .shop button ,
+.newest .food .shop button {
     background-color: var(--primary-color);
     padding: 5px 10px;
     border: none;
@@ -378,12 +386,14 @@ header pre {
     cursor: pointer;
 }
 
-.favourites .shop, .fruit-shop .shop {
+.favourites .shop, .fruit-shop .shop,
+.newest .shop {
     display: flex;
     justify-content: space-around;
 }
 
-.favourites .shop >div , .fruit-shop .shop > div{
+.favourites .shop >div , .fruit-shop .shop > div,
+.newest .shop > div {
     display: flex;
     align-items: center;
     justify-content: space-around;
