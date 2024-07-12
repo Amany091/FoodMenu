@@ -112,16 +112,17 @@
         <div class="shop-list"></div>
         <div class="newest mt-2"></div>
         <div id="products-list">
-            <h1 class="text-center " >Add Product</h1>
+            <h1 class="text-center my-3 " >Add Product</h1>
             <div class="create-product">
                 <form>
                     <input  type="text" class="d-block w-50" id="title" name="title" placeholder="title"  >
-                    <input type="number" class="w-25" id="price" name="price" placeholder="price">
-                    <input type="number" class="w-25" id="discount" name="discount" placeholder="discount">
-                    <input type="number" class="w-25 my-2" id="count" name="count" placeholder="count">
+                    <input type="number"  id="price" name="price" placeholder="price">
+                    <input type="number" id="discount" name="discount" placeholder="discount">
+                    <input type="number"  id="count" name="count" placeholder="count">
                     <input type="text" id="descreption" name="description" placeholder="description" class="w-100 d-block">
-                    <input type="file" class="my-2" name="image" id="image">
+                    <input type="file"  name="image" id="image">
                     <button class="btn btn-success d-block w-100 text-center" id="submit" type="submit" >CREATE</button>
+                    <button class="btn btn-danger d-block w-100 my-1" id="delete" type="button" >Delete All <p id="countFruits" class="text-primary d-inline border border-primary p-1 rounded-pill" ></p> </button>
                 </form>
             </div>
         </div>
@@ -166,7 +167,7 @@
                 <p>More For You</p>
                 <p>YourShop</p>
             </div>
-            <p id="copyright">The Copyright 2022 guide covers 14 jurisdictions. </p>
+            <p id="copyright" class="text-center">The Copyright 2022 guide covers 14 jurisdictions. </p>
             
         </div>
     </footer>

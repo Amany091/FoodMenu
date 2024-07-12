@@ -107,24 +107,24 @@ export const favourites = [
 export const offer = [
     [
         {
-            image: '../assets/orange.jpeg',
-            name: 'Orange1',
+            image: '../assets/melons.jpeg',
+            name: 'Melon',
             descreption: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor',
             desc : 'Amet minim mollit non deserunt ullamco',
             discount: 20,
             beforeDiscount: 59
         },
         {
-            image: '../assets/orange.jpeg',
-            name: 'Orange2',
+            image: '../assets/oranges.jpeg',
+            name: 'Orange',
             descreption: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor',
             desc : 'Amet minim mollit non deserunt ullamco',
             discount: 20,
             beforeDiscount: 59
         },
         {
-            image: '../assets/orange.jpeg',
-            name: 'Orange3',
+            image: '../assets/pinaple.jpeg',
+            name: 'Pinaple',
             descreption: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor',
             desc : 'Amet minim mollit non deserunt ullamco',
             discount: 20,
@@ -133,24 +133,24 @@ export const offer = [
     ],
     [
         {
-            image: '../assets/melons.jpeg',
-            name: 'Melons1',
+            image: '../assets/ananas.jpeg',
+            name: 'Ananas',
             descreption: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor',
             desc : 'Amet minim mollit non deserunt ullamco',
             discount: 20,
             beforeDiscount: 59
         },
         {
-            image: '../assets/melons.jpeg',
-            name: 'Melons2',
+            image: '../assets/ananas.jpeg',
+            name: 'Ananas',
             descreption: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor',
             desc : 'Amet minim mollit non deserunt ullamco',
             discount: 20,
             beforeDiscount: 59
         },
         {
-            image: '../assets/melons.jpeg',
-            name: 'Melons3',
+            image: '../assets/freshapple.jpeg',
+            name: 'Apple',
             descreption: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor',
             desc : 'Amet minim mollit non deserunt ullamco',
             discount: 20,

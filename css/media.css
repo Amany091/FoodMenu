@@ -19,6 +19,16 @@
         width: 100px;
     }
 
+    #products-list form {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #products-list form input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
     .about .people {
         grid-template-columns: repeat(1, 100%);
     }
@@ -58,6 +68,15 @@
 
     .shop>div {
         width: 100px;
+    }
+
+    #products-list form {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #products-list form input {
+        width: 100%;
     }
 
     .about .people {

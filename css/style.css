@@ -196,9 +196,9 @@ header pre {
     justify-content: space-between;
 }
 
-.fruits-offer > div {
+/* .fruits-offer > div {
     padding-bottom: 20px;
-}
+} */
 
  .fruits-offer .offer {
     padding: 0;
@@ -409,8 +409,16 @@ form input {
     border: none;
     padding: 3px;
     border-radius: 10px;
+    margin: 5px 5px 5px 0px;
 }
 
+#submit:focus {
+    background-color:#465 ;
+}
+
+form input::placeholder {
+    font-size: 13px;
+}
 /* ABOUT SECTION */
 .about {
     padding: 15px 5rem;
